@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="" method="post">
+{% csrf_token %}
+<div class="register_div">
+	{% if form.title.errors %}<p class="error">{{ form.title.errors }}</p>{% endif %}
+	<p><label for="title"{% if form.title.errors %} class="error" {% endif %}>Title:</label></p>
+	<p>{{ form.title }}</p>
+</div>
+
+<div class="register_div">
+	{% if form.drawing.errors %}<p class="error">{{ form.drawing.errors }}</p>{% endif %}
+	<p><label for="drawing"{% if form.drawing.errors %} class="error" {% endif %}>Drawing:</label></p>
+	<p>{{ form.drawing }}</p>
+</div>
+
+<p><input type="submit" alt="submit art" /></p>
+{% if form.errors %} <p><font color="red">Ascii Art with that title already exists, please pick another title</font></p> {% endif %}
+
+</form>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+	<div id='artslist'>
+		{% for art in allartsalphabetised %}
+		
+	
+		
+		<p><a href='/TheAsciiArtDatabase/art/{{ art.slug }}/'>{{ art }}</a></p>
+		{% endfor %}
+			
+		</div>
+		
+		<div class="voteform_div">
+		<form action="" method="post">
+			{% csrf_token %}	
+				{{ form.vote }}
+				{{ form.artslug }}
+
+		
+		</form>
+			</div>
+		
+	
+
+   
+	<a href="/TheAsciiArtDatabase/profile/">View your profile!</a>
+{% endblock %}

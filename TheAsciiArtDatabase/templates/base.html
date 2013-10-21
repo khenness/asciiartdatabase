@@ -1,0 +1,43 @@
+<html>
+<head>
+	<link rel='stylesheet' type ='text/css' href='/static/css/TheAsciiArtDatabase.css' />
+
+	{% block extrahead %}
+		<link rel="icon" type="image/png" href="C:/Users/Kevin/BitNami DjangoStack projects/TheAsciiArtDatabase/htdocs/media/images/Favicon.png"/>
+
+	{% endblock %}
+</head>
+<body>
+<div id='pageContainer'>
+    	<div id = 'AsciiLogoText'>
+		<pre ><span  style="font-size: 5px">
+  _______ _                            _ _               _   _____        _        _                                         
+ |__   __| |            /\            (_|_)   /\        | | |  __ \      | |      | |                                        
+    | |  | |__   ___   /  \   ___  ___ _ _   /  \   _ __| |_| |  | | __ _| |_ __ _| |__   __ _ ___  ___   ___ ___  _ __ ___  
+    | |  | '_ \ / _ \ / /\ \ / __|/ __| | | / /\ \ | '__| __| |  | |/ _` | __/ _` | '_ \ / _` / __|/ _ \ / __/ _ \| '_ ` _ \ 
+    | |  | | | |  __// ____ \\__ \ (__| | |/ ____ \| |  | |_| |__| | (_| | || (_| | |_) | (_| \__ \  __/| (_| (_) | | | | | |
+    |_|  |_| |_|\___/_/    \_\___/\___|_|_/_/    \_\_|   \__|_____/ \__,_|\__\__,_|_.__/ \__,_|___/\___(_)___\___/|_| |_| |_|
+			</span></pre>
+	</div>
+	<div id = 'AsciiCat'>
+		<pre ><span  style="font-size: 9px"> _
+( \
+ ) )
+( (  .-````-.  A.--.A
+ \ \/        \/  , , \
+  \           =;  t  /=
+   \   |````-   ',--'
+    / //    |  ||
+   /_,))    |_,))   
+		</span></pre>   
+	</div>
+
+	<div id="nav_top_right">
+		{% if user.is_authenticated %}<p><a href="/TheAsciiArtDatabase/logout/">Logout</a></p>{% else %}<p><a href="/TheAsciiArtDatabase/login/">Login</a></p>{% endif %}
+	</div>
+	{% block content %}
+	
+	{% endblock %}
+</div>
+</body>
+</html>

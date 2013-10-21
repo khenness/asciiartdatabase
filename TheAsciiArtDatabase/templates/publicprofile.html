@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<p>THIS IS A PUBLIC PROFILE!</p>
+	<p>Username: {{artist.user.username}}</p>
+	<p>Name: {{artist.name}}</p>
+	<p>Birthday: {{artist.birthday}}</p>
+	
+	<div id='artslist'>
+		{% for art in allartsalphabetised %}
+		<p><a href='/TheAsciiArtDatabase/art/{{ art.slug }}/'>{{ art }}</a></p>
+		{% endfor %}
+	</div>
+{% endblock %}

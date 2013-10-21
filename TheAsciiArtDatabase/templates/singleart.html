@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<div id='singleart'>
+		<p>Title: {{art.title }}</p>
+		<p><pre><span>{{ art.drawing }}</span></pre></p>
+		<p>Creator: <a href='/TheAsciiArtDatabase/user/{{art.creator.slug}}' > {{art.creator}}</a></p>
+		<p>Creation date: {{ art.created_at}}</p>
+		<p>Score: {{ art.score }}</p>
+		<p>Upvotes: {{ art.upvotes }}</p>
+		<p>Downvotes: {{ art.downvotes }}</p>
+	</div>
+{% endblock %}

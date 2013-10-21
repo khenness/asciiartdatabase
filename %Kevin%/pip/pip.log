@@ -1,0 +1,233 @@
+------------------------------------------------------------
+C:\BitNami\djangostack-1.4.6-0\python\scripts\pip-script.py run on 09/17/13 11:58:58
+Downloading/unpacking Pillow
+
+  Running setup.py egg_info for package Pillow
+
+    running egg_info
+    writing pip-egg-info\Pillow.egg-info\PKG-INFO
+    writing top-level names to pip-egg-info\Pillow.egg-info\top_level.txt
+    writing dependency_links to pip-egg-info\Pillow.egg-info\dependency_links.txt
+    warning: manifest_maker: standard file '-c' not found
+    
+
+    reading manifest file 'pip-egg-info\Pillow.egg-info\SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    warning: no previously-included files found matching '.hgignore'
+
+    warning: no previously-included files found matching '.hgtags'
+
+    warning: no previously-included files found matching 'BUILDME.bat'
+
+    warning: no previously-included files found matching 'make-manifest.py'
+
+    warning: no previously-included files found matching 'SHIP'
+
+    warning: no previously-included files found matching 'SHIP.bat'
+
+    warning: no files found matching 'COPYING'
+
+    warning: no files found matching '*.html' under directory 'docs'
+
+    warning: no files found matching '*.css' under directory 'docs'
+
+    warning: no files found matching 'README' under directory 'docs'
+
+    warning: no files found matching 'CHANGES' under directory 'docs'
+
+    warning: no files found matching 'CONTENTS' under directory 'docs'
+
+    writing manifest file 'pip-egg-info\Pillow.egg-info\SOURCES.txt'
+  Source in c:\users\kevin\appdata\local\temp\pip-build\pillow has version 2.1.0, which satisfies requirement Pillow
+Installing collected packages: Pillow
+
+  Running setup.py install for Pillow
+
+    Running command C:\BitNami\DJANGO~1.6-0\python\python.exe -c "import setuptools;__file__='c:\\users\\kevin\\appdata\\local\\temp\\pip-build\\Pillow\\setup.py';exec(compile(open(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record c:\users\kevin\appdata\local\temp\pip-im_bbq-record\install-record.txt --single-version-externally-managed
+    running install
+    running build
+    running build_py
+    running build_ext
+    building 'PIL._imaging' extension
+
+    Traceback (most recent call last):
+
+      File "<string>", line 1, in <module>
+
+      File "c:\users\kevin\appdata\local\temp\pip-build\Pillow\setup.py", line 559, in <module>
+
+        zip_safe=True,
+
+      File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\core.py", line 152, in setup
+
+        dist.run_commands()
+
+      File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\dist.py", line 953, in run_commands
+
+        self.run_command(cmd)
+
+      File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\dist.py", line 972, in run_command
+
+        cmd_obj.run()
+
+      File "build\bdist.win32\egg\setuptools\command\install.py", line 53, in run
+
+      File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\command\install.py", line 563, in run
+
+        self.run_command('build')
+
+      File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\cmd.py", line 326, in run_command
+
+        self.distribution.run_command(command)
+
+      File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\dist.py", line 972, in run_command
+
+        cmd_obj.run()
+
+      File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\command\build.py", line 127, in run
+
+        self.run_command(cmd_name)
+
+      File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\cmd.py", line 326, in run_command
+
+        self.distribution.run_command(command)
+
+      File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\dist.py", line 972, in run_command
+
+        cmd_obj.run()
+
+      File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\command\build_ext.py", line 339, in run
+
+        self.build_extensions()
+
+      File "c:\users\kevin\appdata\local\temp\pip-build\Pillow\setup.py", line 424, in build_extensions
+
+        build_ext.build_extensions(self)
+
+      File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\command\build_ext.py", line 448, in build_extensions
+
+        self.build_extension(ext)
+
+      File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\command\build_ext.py", line 498, in build_extension
+
+        depends=ext.depends)
+
+      File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\msvc9compiler.py", line 473, in compile
+
+        self.initialize()
+
+      File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\msvc9compiler.py", line 383, in initialize
+
+        vc_env = query_vcvarsall(VERSION, plat_spec)
+
+      File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\msvc9compiler.py", line 299, in query_vcvarsall
+
+        raise ValueError(str(list(result.keys())))
+
+    ValueError: [u'path']
+
+    Complete output from command C:\BitNami\DJANGO~1.6-0\python\python.exe -c "import setuptools;__file__='c:\\users\\kevin\\appdata\\local\\temp\\pip-build\\Pillow\\setup.py';exec(compile(open(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record c:\users\kevin\appdata\local\temp\pip-im_bbq-record\install-record.txt --single-version-externally-managed:
+
+    running install
+
+running build
+
+running build_py
+
+running build_ext
+
+building 'PIL._imaging' extension
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+
+  File "c:\users\kevin\appdata\local\temp\pip-build\Pillow\setup.py", line 559, in <module>
+
+    zip_safe=True,
+
+  File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\core.py", line 152, in setup
+
+    dist.run_commands()
+
+  File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\dist.py", line 953, in run_commands
+
+    self.run_command(cmd)
+
+  File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\dist.py", line 972, in run_command
+
+    cmd_obj.run()
+
+  File "build\bdist.win32\egg\setuptools\command\install.py", line 53, in run
+
+  File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\command\install.py", line 563, in run
+
+    self.run_command('build')
+
+  File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\cmd.py", line 326, in run_command
+
+    self.distribution.run_command(command)
+
+  File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\dist.py", line 972, in run_command
+
+    cmd_obj.run()
+
+  File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\command\build.py", line 127, in run
+
+    self.run_command(cmd_name)
+
+  File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\cmd.py", line 326, in run_command
+
+    self.distribution.run_command(command)
+
+  File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\dist.py", line 972, in run_command
+
+    cmd_obj.run()
+
+  File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\command\build_ext.py", line 339, in run
+
+    self.build_extensions()
+
+  File "c:\users\kevin\appdata\local\temp\pip-build\Pillow\setup.py", line 424, in build_extensions
+
+    build_ext.build_extensions(self)
+
+  File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\command\build_ext.py", line 448, in build_extensions
+
+    self.build_extension(ext)
+
+  File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\command\build_ext.py", line 498, in build_extension
+
+    depends=ext.depends)
+
+  File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\msvc9compiler.py", line 473, in compile
+
+    self.initialize()
+
+  File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\msvc9compiler.py", line 383, in initialize
+
+    vc_env = query_vcvarsall(VERSION, plat_spec)
+
+  File "C:\BitNami\DJANGO~1.6-0\python\lib\distutils\msvc9compiler.py", line 299, in query_vcvarsall
+
+    raise ValueError(str(list(result.keys())))
+
+ValueError: [u'path']
+
+----------------------------------------
+
+Command C:\BitNami\DJANGO~1.6-0\python\python.exe -c "import setuptools;__file__='c:\\users\\kevin\\appdata\\local\\temp\\pip-build\\Pillow\\setup.py';exec(compile(open(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record c:\users\kevin\appdata\local\temp\pip-im_bbq-record\install-record.txt --single-version-externally-managed failed with error code 1 in c:\users\kevin\appdata\local\temp\pip-build\Pillow
+
+Exception information:
+Traceback (most recent call last):
+  File "C:\BitNami\DJANGO~1.6-0\python\lib\site-packages\pip-1.2.1-py2.7.egg\pip\basecommand.py", line 107, in main
+    status = self.run(options, args)
+  File "C:\BitNami\DJANGO~1.6-0\python\lib\site-packages\pip-1.2.1-py2.7.egg\pip\commands\install.py", line 261, in run
+    requirement_set.install(install_options, global_options)
+  File "C:\BitNami\DJANGO~1.6-0\python\lib\site-packages\pip-1.2.1-py2.7.egg\pip\req.py", line 1166, in install
+    requirement.install(install_options, global_options)
+  File "C:\BitNami\DJANGO~1.6-0\python\lib\site-packages\pip-1.2.1-py2.7.egg\pip\req.py", line 589, in install
+    cwd=self.source_dir, filter_stdout=self._filter_install, show_stdout=False)
+  File "C:\BitNami\DJANGO~1.6-0\python\lib\site-packages\pip-1.2.1-py2.7.egg\pip\util.py", line 612, in call_subprocess
+    % (command_desc, proc.returncode, cwd))
+InstallationError: Command C:\BitNami\DJANGO~1.6-0\python\python.exe -c "import setuptools;__file__='c:\\users\\kevin\\appdata\\local\\temp\\pip-build\\Pillow\\setup.py';exec(compile(open(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record c:\users\kevin\appdata\local\temp\pip-im_bbq-record\install-record.txt --single-version-externally-managed failed with error code 1 in c:\users\kevin\appdata\local\temp\pip-build\Pillow
